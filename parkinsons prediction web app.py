@@ -34,7 +34,7 @@ def main():
     SkinThickness = st.text_input('Skin Thickness Value')
     Insulin = st.text_input('Insulin Level')
     BMI = st.text_input('BMI Value')
-    DiabetesPedigreeFunction = st.text_input('Pedigree Function value')
+    PedigreeFunction = st.text_input('Pedigree Function value')
     Age = st.text_input('Age of the Person')
     
     
@@ -45,7 +45,7 @@ def main():
     #Create Button for Prediction
     
     if st.button('parkinsons Test  Result'):
-        diagnosis = diabetes_prediction([Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,DiabetesPedigreeFunction,Age])
+        diagnosis = diabetes_prediction([Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,PedigreeFunction,Age])
         
     st.success(diagnosis)    
      
